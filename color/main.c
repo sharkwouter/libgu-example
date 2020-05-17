@@ -15,10 +15,10 @@ void initGu(){
     sceGuInit();
 
     //Set up buffers
-	sceGuStart(GU_DIRECT, list);
+    sceGuStart(GU_DIRECT, list);
     sceGuDrawBuffer(GU_PSM_8888,(void*)0,BUFFER_WIDTH);
-	sceGuDispBuffer(SCREEN_WIDTH,SCREEN_HEIGHT,(void*)0x88000,BUFFER_WIDTH);
-	sceGuDepthBuffer((void*)0x110000,BUFFER_WIDTH);
+    sceGuDispBuffer(SCREEN_WIDTH,SCREEN_HEIGHT,(void*)0x88000,BUFFER_WIDTH);
+    sceGuDepthBuffer((void*)0x110000,BUFFER_WIDTH);
 
     //Set up viewport
     sceGuOffset(2048 - (SCREEN_WIDTH >> 1), 2048 - (SCREEN_HEIGHT >> 1)); 
@@ -28,12 +28,12 @@ void initGu(){
 
     //Finish and start GU
     sceGuFinish();
-	sceGuDisplay(GU_TRUE);
+    sceGuDisplay(GU_TRUE);
 }
 
 void endGu(){
     sceGuDisplay(GU_FALSE);
-	sceGuTerm();
+    sceGuTerm();
 }
 
 void startFrame(){
