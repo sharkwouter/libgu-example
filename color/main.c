@@ -49,9 +49,11 @@ void endFrame(){
 
 int main() {
     initGu();
+
     int running = 1;
     while(running){
         startFrame();
+
         sceGuClearColor(0xFF0000FF);
         sceGuClear(GU_COLOR_BUFFER_BIT);
 
