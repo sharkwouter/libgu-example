@@ -1,0 +1,1 @@
+This is the minimum code required to get a background in a solid color to display. You could probably play around with it to make it not use vsync, but I don't think it's possible to shave off much more.
